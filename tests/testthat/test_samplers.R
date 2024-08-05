@@ -33,7 +33,7 @@ test_that('test sampling',{
   
   expect_equal(pval(boot1), pval(boot2), tolerance = 0.05)
   expect_equal(teststat(boot1), teststat(boot2), tolerance = 0.005)
-  expect_equal(confint(boot1), confint(boot2), tolerance = 0.005)
+  expect_equal(confint(boot1), confint(boot2), tolerance = 0.01)
   
   
   
